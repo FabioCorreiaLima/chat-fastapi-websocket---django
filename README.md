@@ -4,14 +4,14 @@ Este projeto Django integra um sistema de gerenciamento de eventos com um chat e
 
 ## Funcionalidades Principais
 
-### CRUD de Eventos
+## CRUD de Eventos
 
 - **Listar Eventos**: Exibe uma lista de todos os eventos cadastrados.
 - **Criar Evento**: Permite adicionar um novo evento ao sistema.
 - **Editar Evento**: Permite modificar detalhes de um evento existente.
 - **Deletar Evento**: Remove um evento do sistema.
 
-### Chat em Tempo Real
+## Chat em Tempo Real
 
 - **Chat Utilizando FastAPI WebSocket**: Implementa um chat em tempo real usando FastAPI para WebSocket.
 - **Persistência de Mensagens**: Utiliza Redis como banco de dados para armazenar mensagens de chat, permitindo a persistência das conversas.
@@ -26,7 +26,7 @@ Para executar este projeto, você precisará instalar as seguintes bibliotecas P
 - django
 
 
-### Instalação
+## Instalação
 
 1. Clone este repositório:
 
@@ -36,7 +36,7 @@ Para executar este projeto, você precisará instalar as seguintes bibliotecas P
     pip install -r requirements.txt
 
 
-### Configuração
+## Configuração
 
 1. Configure as variáveis de ambiente necessárias para o projeto, como as credenciais do Redis e outras configurações específicas.
 
@@ -45,13 +45,13 @@ Para executar este projeto, você precisará instalar as seguintes bibliotecas P
     - python manage.py migrate
 
 3. Inicie o servidor Django e o servidor FastAPI para WebSocket:
-# Iniciar servidor Django
+### Iniciar servidor Django
     python manage.py runserver
 
-# Iniciar servidor FastAPI WebSocket (em outro terminal)
+## Iniciar servidor FastAPI WebSocket (em outro terminal)
     uvicorn nome_do_arquivo:app --reload
 
-### Contribuição
+## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas relatando bugs ou para enviar solicitações de alteração com melhorias.
 
