@@ -52,4 +52,6 @@ Para executar este projeto, você precisará instalar as seguintes bibliotecas P
     uvicorn nome_do_arquivo:app --reload
 
 ### Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues relatando problemas ou para enviar pull requests com melhorias.
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas relatando bugs ou para enviar solicitações de alteração com melhorias.
+
