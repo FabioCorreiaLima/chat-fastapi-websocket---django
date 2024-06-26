@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar Evento{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Editar Evento</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        
+        <div class="form-group">
+            <label for="id_nome">Nome:</label>
+            {{ form.nome.errors }}
+            {{ form.nome }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_data">Data:</label>
+            {{ form.data.errors }}
+            {{ form.data }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_descricao">Descrição:</label>
+            {{ form.descricao.errors }}
+            {{ form.descricao }}
+        </div>
+
+        <div class="btn-group">
+            <button type="submit" class="btn btn-success">Salvar</button>
+            <a href="{% url 'listar_eventos' %}" class="btn btn-secondary">Voltar</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

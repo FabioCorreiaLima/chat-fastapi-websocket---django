@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Listar Eventos{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Eventos</h2>
+    <ul>
+        {% if eventos %}
+            {% for evento in eventos %}
+                <li>
+                    <div>
+                        <strong>{{ evento.nome }}</strong>
+                        <p>{{ evento.data }}</p>
+                        <p>{{ evento.descricao }}</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="{% url 'editar_evento' evento.pk %}" class="btn">Editar</a>
+                        <a href="{% url 'deletar_evento' evento.pk %}" class="btn">Deletar</a>
+                        <a href="{% url 'profile' %}" class="btn">Voltar</a>
+                    </div>
+                </li>
+            {% endfor %}
+        {% else %}
+            <li>
+                <div>
+                    <p>Nenhum evento encontrado.</p>
+                </div>
+                <div class="btn-group">
+                    <a href="{% url 'profile' %}" class="btn">Voltar</a>
+                </div>
+            </li>
+        {% endif %}
+    </ul>
+</div>
+{% endblock %}

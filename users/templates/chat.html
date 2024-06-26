@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat WebSocket - Evento {{ evento_id }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { color: #333; }
+        form { margin-bottom: 20px; }
+        input { padding: 10px; margin-right: 10px; }
+        button { padding: 10px; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 10px; padding: 10px; background: #f4f4f4; border-radius: 5px; }
+        .back-link { margin-top: 20px; display: inline-block; padding: 10px; background: #ddd; border-radius: 5px; text-decoration: none; color: #333; }
+        .form-actions { margin-top: 10px; }
+        .form-actions button, .form-actions a { margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Chat WebSocket - Evento {{ evento_id }}</h1>
+    <h2>Seu Username: <span id="ws-username">{{ username }}</span></h2>
+    <form action="" onsubmit="enviarMensagem(event)">
+        <input type="text" id="mensagemTexto" autocomplete="off" placeholder="Digite sua mensagem"/>
+        <div class="form-actions">
+            <button type="submit">Enviar</button>
+            <a href="http://127.0.0.1:8000/accounts/profile/" class="back-link">Voltar</a>
+        </div>
+    </form>
+    <ul id='mensagens'></ul>
+    <script>
+        const eventoId = "{{ evento_id }}";
+        const username = "{{ username }}";
+        const ws = new WebSocket(`ws://127.0.0.1:8001/ws/${eventoId}/${username}`);
+
+        ws.onmessage = function(event) {
+            const mensagens = document.getElementById('mensagens');
+            const mensagem = document.createElement('li');
+            mensagem.textContent = event.data;
+            mensagens.appendChild(mensagem);
+        };
+
+        function enviarMensagem(event) {
+            const input = document.getElementById("mensagemTexto");
+            if (input.value.trim() !== "") {
+                ws.send(input.value);
+                input.value = '';
+            }
+            event.preventDefault();
+        }
+    </script>
+</body>
+</html>

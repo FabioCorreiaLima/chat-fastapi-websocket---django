@@ -1,0 +1,27 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Project{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}">Sair</a>
+            <a href="{% url 'criar_evento' %}">Criar Evento</a>
+            <a href="{% url 'listar_eventos' %}">Listar Eventos</a>
+            <a href="{% url 'chat' %}">Chat</a>
+            
+        {% else %}
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'register' %}">Registrar</a>
+        {% endif %}
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
