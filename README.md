@@ -53,23 +53,13 @@ Para executar este projeto, você precisará instalar as seguintes bibliotecas P
 
 ## Video
 
-
-
-
-
-## Contribuição
-
-
+https://github.com/FabioCorreiaLima/chat-fastapi-websocket---django/assets/118375746/d7e829d2-c322-403c-9b1f-db888d3af48c
 
 https://github.com/FabioCorreiaLima/chat-fastapi-websocket---django/assets/118375746/1beedfa6-a1b9-422e-92d6-efa157e388ce
 
 ---django/assets/118375746/d7e829d2-c322-403c-9b1f-db888d3af48c
 
-
-
-https://github.com/FabioCorreiaLima/chat-fastapi-websocket---django/assets/118375746/d7e829d2-c322-403c-9b1f-db888d3af48c
-
-
+## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas relatando bugs ou para enviar solicitações de alteração com melhorias.
 
