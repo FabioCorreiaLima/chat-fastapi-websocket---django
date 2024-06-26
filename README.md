@@ -30,9 +30,8 @@ Para executar este projeto, você precisará instalar as seguintes bibliotecas P
 
 1. Clone este repositório:
 
-   ```bash
-   git clone https://github.com/seu_usuario/seu_projeto.git
-   cd seu_projeto
+  [ ```bash
+   git clone https://github.com/FabioCorreiaLima/chat-fastapi-websocket---django.git
 
 2. Instale as dependências usando pip:
     pip install -r requirements.txt
