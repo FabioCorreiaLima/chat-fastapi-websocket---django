@@ -51,6 +51,13 @@ Para executar este projeto, você precisará instalar as seguintes bibliotecas P
 ## Iniciar servidor FastAPI WebSocket (em outro terminal)
     uvicorn nome_do_arquivo:app --reload
 
+## Video
+
+https://github.com/FabioCorreiaLima/chat-fastapi-websocket---django/assets/118375746/8e0ddb7a-c2e4-40b3-aa93-c64161444051
+
+https://github.com/FabioCorreiaLima/chat-fastapi-websocket---django/assets/118375746/429fec8e-2ba3-4fbb-a18c-6d6d1d9a4ee4
+
+
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas relatando bugs ou para enviar solicitações de alteração com melhorias.
