@@ -59,10 +59,6 @@ Para executar este projeto, você precisará instalar as seguintes bibliotecas P
 
 ## Contribuição
 
-https://github.com/FabioCorreiaLima/chat-fastapi-websocket
-
-https://github.com/FabioCorreiaLima/chat-fastapi-websocket---django/assets/118375746/1beedfa6-a1b9-422e-92d6-efa157e388ce
-
 
 
 https://github.com/FabioCorreiaLima/chat-fastapi-websocket---django/assets/118375746/1beedfa6-a1b9-422e-92d6-efa157e388ce
